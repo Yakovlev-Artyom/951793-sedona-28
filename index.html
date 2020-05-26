@@ -11,16 +11,16 @@
           <img src="img/logo.svg" alt="Логотип">
         </a>
         <ul>
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div>
-        <h1>Sedona</h1> <!--Здесь будет надпись Sedona--(подумал оставить этот заголовок, как самый главный, потом его скрыть, можно так?)-->
+        <h1 class="visually-hidden">Sedona</h1>
           <!-- здесь будет Фоновая картинка главной страницы-->
           <img src="img/welcome.svg" alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!">
         <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -87,15 +87,15 @@
       <section>
         <h2>Социальные сети</h2>
         <ul>
-          <li><a href="">
+          <li><a href="" area-label="Твиттер">
                 <img src="img/twitter.svg" alt="Twitter">
               </a>
           </li>
-          <li><a href="">
+          <li><a href="" area-label="Фейсбук">
                 <img src="img/facebook.svg" alt="Facebook">
               </a>
           </li>
-          <li><a href="">
+          <li><a href="" area-label="Ютьюб">
                 <img src="img/youtube.svg" alt="YouTube">
               </a>
           </li>
@@ -109,16 +109,26 @@
         </p>
     </footer>
     <section>
-    <h2>Поиск гостиницы в Седоне</h2>
-    <p>Дата заезда:</p>
-    <!--Здесь будет форма даты заезда-->
-    <p>Дата выезда:</p>
-    <!--Здесь будет форма даты выезда-->
-    <p>Взрослые:</p>
-    <!--Здесь будет форма-->
-    <p>Дети:</p>
-    <!--Здесь будет форма-->
-    <button type="button">Найти</button>
+      <h2>Поиск гостиницы в Седоне</h2>
+      <form action="https://echo.htmlacademy.ru" metod="post">
+        <p>
+          <label for="date-1">Дата заезда:</label>
+          <input type="text" name="arrival-date" id="date-1" placeholder="24 Апреля 2017">
+        </p>
+        <p>
+          <label for="date-2">Дата выезда:</label>
+          <input type="text" name="date-of-departure" id="date-2" placeholder="4 июля 2017">
+        </p>
+        <p>
+          <label for="adult">Взрослые:</label>
+          <input type="number" name="number-of-adult" id="adult">
+        </p>
+        <p>
+          <label for="children">Дети:</label>
+          <input type="number" name="number-of-children" id="children">
+        </p>
+    <button type="submit">Найти</button>
+    </form>
     </section>
   </body>
 </html>
