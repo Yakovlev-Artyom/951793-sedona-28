@@ -67,38 +67,28 @@
         </form>
       </section>
       <section>
+        <h2 class="visually-hidden">Сортировка отелей</h2>
           <span>Найдено: 3 </span>
-          <fieldset>
-            <legend>Сортировка:</legend>
+            <span>Сортировка:</span>
             <ul>
               <li>
-                <input type="radio" name="sorting" id="filter-by-price" value="by-price" checked>
-                <label for="filter-by-price">По цене</label>
+                <button type="button" name="sorting-price">По цене</button>
               </li>
               <li>
-                <input type="radio" name="sorting" id="filter-by-type" value="by-type">
-                <label for="filter-by-type">По типу</label>
+                <button type="button" name="sorting-type">По типу</button>
               </li>
               <li>
-                <input type="radio" name="sorting" id="filter-by-rating" value="by-rating">
-                <label for="filter-by-rating">По рейтингу</label>
+                <button type="button" name="sorting-rating">По рейтингу</button>
               </li>
             </ul>
             <ul>
               <li>
-                <label>
-                  <input type="radio" name="sorting-price" id="filter-ascending-price" value="ascending-price">
-                  <img src="img/icon-up-dir.svg" alt="по возрастанию цены">
-                </label>
+                  <button type="button" name="ascending-price"> По возрастанию </button>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="sorting-price" id="filter-descending-price" value="descending-price">
-                  <img src="img/icon-down-dir.svg" alt="по убыванию цены">
-                </label>
+                  <button type="button" name="descending-price"> По убыванию </button>
               </li>
             </ul>
-          </fieldset>
       </section>
       <article>
         <h2>AmaraResort & SPA</h2>
