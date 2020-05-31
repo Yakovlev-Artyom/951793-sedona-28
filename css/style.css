@@ -1,0 +1,150 @@
+/* Variables */
+
+:root{
+    --basic-black: #000000;
+    --basic-white: #ffffff;
+    --basic-dark-grey: #333333;
+    --basic-light-gray: #f2f2f2;
+    --basic-brown: #766357;
+    --light-gray: #eeeeee;
+    --li-gray: #e5e5e5;
+    --dark-gray: #666666;
+
+    --special: #81B3D2;
+}
+
+/*Global*/
+
+body{
+    min-width: 1220px;
+    margin:0;
+    padding:0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--basic-dark-grey);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main navidation*/
+
+.main-navigation{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--basic-black);
+    background:transparent;
+}
+.main-navigation-wrapper{
+    background-color: var(--basic-white);
+}
+.site-navigation{
+    list-style: none;
+}
+
+/*User Navigation*/
+
+.site-navigation a,
+.user-navigation a{
+    color: var(--basic-black);
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus{
+    color: var(--special);
+}
+
+/*Advantages*/
+.main-preview{
+    text-align: center;
+}
+.advantages-list{
+    list-style: none;
+}
+.advantages-item{
+    text-align: center;
+}
+.advantages-item h3{
+    font-size: 21px;
+    line-height: 21px;
+}
+.advantages-item:nth-child(4n+1){
+    color: var(--basic-white);
+    background-color: var(--special);
+}
+
+
+.offers span{
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/*Button*/
+.button{
+    font:inherit;
+    text-align: center;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    border: none;
+}
+.button-1{
+    background-color: var(--special);
+}
+.button-2{
+    background-color: var(--basic-brown);
+}
+.button-1:hover,
+.button-1:focus{
+    background-color: #669EC0;
+}
+.button-2:hover,
+.button-2:focus{
+    background-color: #604E43;
+}
+.button-1:active{
+    background-color: #5496BD;
+    color:rgba(255,255,255, 0.3);
+}
+.button-2:active{
+    background-color: #503E33;
+    color:rgba(255,255,255, 0.3);
+}
+
+/*Footer*/
+.main-footer{
+    color: var(--basic-black);
+    background-color: rgba(255,255,255, 0.9);
+}
+
+.contact{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+.contact a{
+    color: var(--basic-black);
+}
+.footer-social ul{
+    list-style: none;
+}
+
+
+
+
+
+.visually-hidden{
+    display: none;
+}
