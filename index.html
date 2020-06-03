@@ -81,7 +81,30 @@
       <div class="offers">
         <span>Заинтересовались?</span>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button button-brown" type="submit">Поиск гостиницы в Седоне</button>
       </div>
+      <section class="pop-up-window"> <!-- class="visually-hidden"-->
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label for="date-1">Дата заезда:</label>
+            <input type="text" name="arrival-date" id="date-1" placeholder="24 Апреля 2017">
+          </p>
+          <p>
+            <label for="date-2">Дата выезда:</label>
+            <input type="text" name="date-of-departure" id="date-2" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for="adult">Взрослые:</label>
+            <input type="number" name="number-of-adult" id="adult">
+          </p>
+          <p>
+            <label for="children">Дети:</label>
+            <input type="number" name="number-of-children" id="children">
+          </p>
+      <button class="button button-blue" type="submit">Найти</button>
+      </form>
+      </section>
       <img src="img/map.png" alt="карта">
     </main>
     <footer class="main-footer">
@@ -113,28 +136,5 @@
           </a>
         </p>
     </footer>
-    <section class="pop-up-window"> <!-- class="visually-hidden"-->
-      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-      <button class="button button-brown" type="submit">Поиск гостиницы в Седоне</button>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <p>
-          <label for="date-1">Дата заезда:</label>
-          <input type="text" name="arrival-date" id="date-1" placeholder="24 Апреля 2017">
-        </p>
-        <p>
-          <label for="date-2">Дата выезда:</label>
-          <input type="text" name="date-of-departure" id="date-2" placeholder="4 июля 2017">
-        </p>
-        <p>
-          <label for="adult">Взрослые:</label>
-          <input type="number" name="number-of-adult" id="adult">
-        </p>
-        <p>
-          <label for="children">Дети:</label>
-          <input type="number" name="number-of-children" id="children">
-        </p>
-    <button class="button button-blue" type="submit">Найти</button>
-    </form>
-    </section>
   </body>
 </html>

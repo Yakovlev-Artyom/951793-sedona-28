@@ -103,6 +103,9 @@ a.disabled{
     background-color: var(--special);
 }
 
+.offers{
+    text-align: center;
+}
 
 .offers span{
     font-size: 21px;
@@ -171,6 +174,11 @@ a.disabled{
 }
 .footer-social ul{
     list-style: none;
+}
+
+
+.pop-up-window{
+    display: none;
 }
 .pop-up-window h2{
     color: var(--basic-white);
