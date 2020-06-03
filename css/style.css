@@ -19,7 +19,7 @@
 /*Global*/
 
 body{
-    min-width: 1300px;
+    min-width: 1200px;
     margin:0;
     padding:0;
     font-family: "PT Sans", Arial, sans-serif;
@@ -44,7 +44,7 @@ img{
     margin: -1px;
     border: 0;
     padding: 0;
-    clip rect(0 0 0 0);
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
@@ -117,22 +117,22 @@ img{
     background-color: var(--special);
 }
 .button-brown{
-    background-color: var(--btn-2-bg-light-brown);
+    background-color: var(--btn-brown-bg-light-brown);
 }
 .button-blue:hover,
 .button-blue:focus{
-    background-color: var( --btn-1-hover-bg-blue);
+    background-color: var( --btn-blue-hover-bg-blue);
 }
 .button-brown:hover,
 .button-brown:focus{
-    background-color: var(--btn-2-hover-bg-brown);
+    background-color: var(--btn-brown-hover-bg-brown);
 }
 .button-blue:active{
-    background-color: var(--btn-1-active-bg-dark-blue);
+    background-color: var(--btn-blue-active-bg-dark-blue);
     color:rgba(255,255,255, 0.3);
 }
 .button-brown:active{
-    background-color: var(--btn-2-active-bg-dark-brown);
+    background-color: var(--btn-brown-active-bg-dark-brown);
     color:rgba(255,255,255, 0.3);
 }
 
@@ -155,7 +155,7 @@ img{
 }
 .pop-up-window h2{
     color: var(--basic-white);
-    background-color:var(--btn-2-bg-light-brown) ;
+    background-color:var(--btn-brown-bg-light-brown) ;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
