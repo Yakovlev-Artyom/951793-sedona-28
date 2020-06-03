@@ -47,7 +47,9 @@ img{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
+a.disabled{
+    pointer-events: none;
+}
 /* Main navidation*/
 
 .main-navigation{
@@ -75,6 +77,11 @@ img{
 .user-navigation a:hover,
 .user-navigation a:focus{
     color: var(--special);
+}
+.site-navigation a:active,
+.user-navigation a:active{
+    color:  var(--basic-black);
+    opacity: 0.3;
 }
 
 /*Advantages*/
@@ -135,8 +142,11 @@ img{
     background-color: var(--btn-brown-active-bg-dark-brown);
     color:rgba(255,255,255, 0.3);
 }
+
+ /*Filter Button*/
 .filter-button{
-    color: rgba(255,255,255, 0.7);
+    color:  var(--basic-black);
+    opacity: 0.3;
 }
 .filter-button:hover,
 .filter-button:focus{
