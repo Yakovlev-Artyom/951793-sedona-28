@@ -135,7 +135,16 @@ img{
     background-color: var(--btn-brown-active-bg-dark-brown);
     color:rgba(255,255,255, 0.3);
 }
-
+.filter-button{
+    color: rgba(255,255,255, 0.7);
+}
+.filter-button:hover,
+.filter-button:focus{
+    color: var(--special);
+}
+.filter-button:active{
+    color: var(--basic-black);
+}
 /*Footer*/
 .main-footer{
     color: var(--basic-black);
