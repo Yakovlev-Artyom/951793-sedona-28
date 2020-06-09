@@ -26,12 +26,11 @@
       </nav>
     </header>
     <main>
-      <section class="filter-box">
+      <section >
         <!--Здесь будет фоновая картинка (размытый фон города)-->
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="filter-box" action="https://echo.htmlacademy.ru" method="get">
           <div class="infrastructure">
-            <fieldset>
-              <legend>Инфраструктура:</legend>
+            <legend>Инфраструктура:</legend>
               <ul>
                 <li>
                   <input type="checkbox" name="pool" id="filter-pool" checked>
@@ -46,10 +45,8 @@
                   <label for="filter-wi-fi">Wi-Fi</label>
                 </li>
               </ul>
-            </fieldset>
           </div>
           <div class="type-of-life">
-            <fieldset>
               <legend>Тип жилья:</legend>
               <ul>
                 <li>
@@ -65,21 +62,19 @@
                   <label for="filter-apartments">Апартаменты</label>
                 </li>
               </ul>
-            </fieldset>
           </div>
           <div class="cost">
-            <fieldset>
               <legend>Стоимость в сутки (Р):</legend>
               <p>
                 <label for="filter-price-range"> от 0 до 3000</label>
                 <input type="range" name="price-range" id="filter-price-range" min="0" max="3000">
               </p>
-            </fieldset>
             <button type="submit">Показать</button>
           </div>
         </form>
       </section>
       <section>
+      <div class="filter-box">
         <h2 class="visually-hidden">Сортировка отелей</h2>
           <span>Найдено: 3 </span>
             <span>Сортировка:</span>
@@ -102,6 +97,7 @@
                   <button type="button" name="descending-price"><span class="visually-hidden"> По убыванию</span> </button>
               </li>
             </ul>
+          </div>
       </section>
       <article class="item-1">
         <img src="img/amara_resort.jpg" alt="AmaraResort & SPA">

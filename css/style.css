@@ -251,12 +251,12 @@ a.disabled{
 
 /*Hotels*/
 
-/*.filter-box{
+.filter-box{
     display: flex;                              
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 auto;
 
-}                                           Еще подумаю над этим*/
+}                                          /* Еще подумаю над этим*/
 
 .item-1{
     display: flex;
