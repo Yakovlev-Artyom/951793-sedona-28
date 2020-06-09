@@ -36,6 +36,7 @@ a{
 img{
     max-width: 100%;
     height: auto;
+    text-align: center;
 }
 .visually-hidden{
     position: absolute;
@@ -50,19 +51,49 @@ img{
 a.disabled{
     pointer-events: none;
 }
+
+/* Grid*/
+.page{
+    height: 100%;
+}
+.page-body{
+    min-width: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
 /* Main navidation*/
 
 .main-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     color: var(--basic-black);
     background:transparent;
 }
+.main-header-logo{
+    width: 138px;
+    height: 70px;
+}
+/*Container*/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 72px;
+}
 .main-navigation-wrapper{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
     background-color: var(--basic-white);
 }
 .site-navigation{
+    display: flex;                                          /*Оставлю пока так*/
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -89,9 +120,14 @@ a.disabled{
     text-align: center;
 }
 .advantages-list{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.advantages-item{
+.advantages-item {
     text-align: center;
 }
 .advantages-item h3{
@@ -99,12 +135,17 @@ a.disabled{
     line-height: 21px;
 }
 .advantages-item:nth-child(4n+1){
+    display: flex;
     color: var(--basic-white);
     background-color: var(--special);
 }
 
 .offers{
+    width: 435px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    
 }
 
 .offers span{
@@ -158,22 +199,36 @@ a.disabled{
 .filter-button:active{
     color: var(--basic-black);
 }
+
 /*Footer*/
 .main-footer{
+    padding: 23px 0;
     color: var(--basic-black);
     background-color: rgba(255,255,255, 0.9);
 }
-
-.contact{
+.main-footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.footer-contact{
+    margin: 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    
 }
-.contact a{
+.footer-contact a{
     color: var(--basic-black);
+    margin: 0;
 }
 .footer-social ul{
     list-style: none;
+    margin: 0 auto;
+    justify-self: center;
+}
+.footer-copyright{
+    margin: 0;
+    justify-self: end;
 }
 
 
@@ -192,4 +247,41 @@ a.disabled{
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
+}
+
+/*Hotels*/
+
+/*.filter-box{
+    display: flex;                              
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}                                           Еще подумаю над этим*/
+
+.item-1{
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 76px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.item-2{
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 76px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.item-3{
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 76px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

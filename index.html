@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -7,19 +7,21 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/logo.svg" alt="Логотип">
         </a>
         <div class="main-navigation-wrapper">
-          <ul class="site-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
-          </ul>
+          <div class="container">
+            <ul class="site-navigation">
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Фото и видео</a></li>
+              <li><a href="#">Карта штата</a></li>
+              <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -35,9 +37,11 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3>Настоящий городок</h3>
-            <span>-№1-</span>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="item">
+              <h3>Настоящий городок</h3>
+              <span>-№1-</span>
+              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img src="img/image-1.jpg" alt="город">
           </li>
           <li class="advantages-item">
@@ -57,9 +61,11 @@
           </li>
           <li class="advantages-item">
             <img src="img/image-2.jpg" alt="Мост дьявола">
+            <div class="item">
             <h3>Там есть мост дьявола</h3>
             <span>-№2-</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </li>
           <li class="advantages-item">
             <h3>Небольшая площадь</h3>
@@ -102,36 +108,38 @@
           <button class="button button-blue" type="submit">Найти</button>
         </form>
       </div>
-      <img src="img/map.png" alt="карта">
+      <img class="map" src="img/map.png" alt="карта">
     </main>
     <footer class="main-footer">
-      <p class="contact">
-        #visitsedona<br>
-        тел:<a href="tel:+74956660266"> +7(495)666-02-66</a>
-      </p>
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul>
-          <li><a class="button button-blue" href="" title="Твиттер">
+      <div class="container">
+        <p class="footer-contact">
+          #visitsedona<br>
+          тел:<a href="tel:+74956660266"> +7(495)666-02-66</a>
+        </p>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul>
+            <li><a class="button button-blue" href="" title="Твиттер">
                 <img src="img/twitter.svg" alt="Twitter">
               </a>
-          </li>
-          <li><a class="button button-blue" href="" title="Фейсбук">
+            </li>
+            <li><a class="button button-blue" href="" title="Фейсбук">
                 <img src="img/facebook.svg" alt="Facebook">
               </a>
-          </li>
-          <li><a class="button button-blue" href="" title="Ютьюб">
+            </li>
+            <li><a class="button button-blue" href="" title="Ютьюб">
                 <img src="img/youtube.svg" alt="YouTube">
               </a>
-          </li>
-        </ul>
-      </section>
-        <p>
-          Website by
-          <a href="https://htmlacademy.ru">
-            <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
-          </a>
-        </p>
+            </li>
+          </ul>
+       </section>
+          <p class="footer-copyright">
+           Website by
+            <a href="https://htmlacademy.ru">
+              <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+            </a>
+          </p>
+      </div>
     </footer>
   </body>
 </html>
