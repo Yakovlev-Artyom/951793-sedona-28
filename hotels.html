@@ -27,26 +27,27 @@
     </header>
     <main>
       <section >
-        <!--Здесь будет фоновая картинка (размытый фон города)-->
-        <form class="filter-box" action="https://echo.htmlacademy.ru" method="get">
-          <div class="infrastructure">
-            <legend>Инфраструктура:</legend>
-              <ul>
-                <li>
-                  <input type="checkbox" name="pool" id="filter-pool" checked>
-                  <label for="filter-pool">Бассейн</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="parking" id="filter-parking">
-                  <label for="filter-parking">Парковка</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="wi-fi" id="filter-wi-fi">
-                  <label for="filter-wi-fi">Wi-Fi</label>
-                </li>
-              </ul>
-          </div>
-          <div class="type-of-life">
+        <div class="container">
+          <!--Здесь будет фоновая картинка (размытый фон города)-->
+          <form class="filter-box" action="https://echo.htmlacademy.ru" method="get">
+            <div class="infrastructure">
+              <legend>Инфраструктура:</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="pool" id="filter-pool" checked>
+                    <label for="filter-pool">Бассейн</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="parking" id="filter-parking">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                    <label for="filter-wi-fi">Wi-Fi</label>
+                  </li>
+                </ul>
+            </div>
+            <div class="type-of-life">
               <legend>Тип жилья:</legend>
               <ul>
                 <li>
@@ -62,21 +63,22 @@
                   <label for="filter-apartments">Апартаменты</label>
                 </li>
               </ul>
-          </div>
-          <div class="cost">
+            </div>
+            <div class="cost">
               <legend>Стоимость в сутки (Р):</legend>
               <p>
-                <label for="filter-price-range"> от 0 до 3000</label>
+                <label for="filter-price-range"> от 0 до 3000</label><br>
                 <input type="range" name="price-range" id="filter-price-range" min="0" max="3000">
               </p>
-            <button type="submit">Показать</button>
+              <button type="submit">Показать</button>
+            </div>
           </div>
         </form>
       </section>
       <section>
-      <div class="filter-box">
-        <h2 class="visually-hidden">Сортировка отелей</h2>
-          <span>Найдено: 3 </span>
+        <div class="filter-box">
+            <h2 class="visually-hidden">Сортировка отелей</h2>
+            <span>Найдено: 3 </span>
             <span>Сортировка:</span>
             <ul>
               <li>
@@ -99,7 +101,7 @@
             </ul>
           </div>
       </section>
-      <article class="item-1">
+      <article class="items">
         <img src="img/amara_resort.jpg" alt="AmaraResort & SPA">
         <div class="description">
           <h2>AmaraResort & SPA</h2>
@@ -112,7 +114,7 @@
           <p>Рейтинг: 8,5</p>
         </div>
       </article>
-      <article class="item-2">
+      <article class="items">
         <img src="img/desert_quail.jpg" alt="Desert Quail Inn">
         <div class="description">
           <h2>Desert Quail Inn</h2>
@@ -125,7 +127,7 @@
           <p>Рейтинг: 8,9</p>
         </div>
       </article>
-      <article class="item-3">
+      <article class="items">
         <img src="img/villas_pocodiablo.jpg" alt="Villas at Poco Diablo">
         <div class="description">
           <h2>Villas at Poco Diablo</h2>
